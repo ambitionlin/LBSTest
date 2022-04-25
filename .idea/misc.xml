@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1575" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/drawable/custom_divider.xml" value="0.155" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1575" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/drawable/search_edit_bg.xml" value="0.1575" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/layout/activity_maps.xml" value="0.20770877944325483" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/layout/item_search_result.xml" value="0.23125" />
+        <entry key="..\:/GitHub/LBSTest/LBSTest/app/src/main/res/layout/search_view_bg.xml" value="0.24427083333333333" />
         <entry key="..\:/GitHub/LBSTest/app/src/main/res/layout/activity_maps.xml" value="0.25885416666666666" />
       </map>
     </option>

@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="true"
     tools:context=".MapsActivity"
-    android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/positionTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"/>
+    android:orientation="vertical">
 
     <com.baidu.mapapi.map.MapView
-        android:id="@+id/bmapView"
+        android:id="@+id/bMapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true" />
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_weight = "1"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/search_view_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        map:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint = "@string/input_cross_location"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:textColorHint="#9B9B9B"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/search_edit_bg"
+            android:drawableLeft="@mipmap/icon_edit_search"
+            android:drawablePadding="16dp"/>
+        <ImageView
+            android:id="@+id/searchEditDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:src="@mipmap/icon_search_delete"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        map:layout_constraintTop_toBottomOf="@+id/searchBox"
+        map:layout_constraintBottom_toBottomOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

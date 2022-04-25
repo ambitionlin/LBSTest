@@ -35,16 +35,16 @@
             android:name=".MapsActivity"
             android:exported="true"
             android:label="@string/title_activity_maps">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="0PmvrEqs6KXpUrafw27I2LNN52X4rd0P" >
+            android:value="epgZy8Sif0vQ7ItycGKPVhcsPt2gIu3y" >
         </meta-data>
 
         <service

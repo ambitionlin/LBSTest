@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LBSTest</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="input_cross_location">搜索地点</string>
 </resources>
